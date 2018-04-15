@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- layout file for a single row in the tag recycler view -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/row_vertical_padding"
+    android:paddingTop="@dimen/row_vertical_padding">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- tag image -->
+        <!-- todo: the image should be a circle, not a square? -->
+        <ImageView
+            android:id="@+id/tag_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@android:color/holo_blue_light" />
+
+        <!-- tag name -->
+        <TextView
+            android:id="@+id/tag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tag_image"
+            android:paddingLeft="15dp"
+            android:text="molly"
+            android:textSize="20dp"/>
+
+        <!-- number of images with the tag -->
+        <TextView
+            android:id="@+id/tag_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="20"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
