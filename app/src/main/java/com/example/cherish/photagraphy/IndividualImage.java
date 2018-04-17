@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ToggleButton;
 
 public class IndividualImage extends AppCompatActivity {
 
@@ -20,5 +21,15 @@ public class IndividualImage extends AppCompatActivity {
                 startActivity(new Intent(IndividualImage.this, IndividualImagePop.class));
             }
         });
+    }
+
+    // add the function of LIKE vs LIKED
+    public void changeLikeState(View view) {
+        boolean checked = ((ToggleButton) view).isChecked();
+        if (checked) {
+
+        } else {
+
+        }
     }
 }
