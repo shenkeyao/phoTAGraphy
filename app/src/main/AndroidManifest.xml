@@ -9,15 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home">
+        <activity android:name=".IndividualImage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Home" />
         <activity android:name=".TagCloud" />
-        <activity android:name=".TagList"></activity>
+        <activity android:name=".TagList" />
+        <activity
+            android:name=".IndividualImagePop"
+            android:theme="@style/AppTheme.CustomizedBackground" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".EditSingleTag"></activity>
     </application>
 
 </manifest>
